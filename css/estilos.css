@@ -1,0 +1,122 @@
+:root {
+  --color-principal: #ff4b28;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------HEADER---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+.container-fluid .logo {
+  width: 8rem;
+}
+/* color del navbar */
+.contenido-navbar {
+  background-color: #011627;
+  /* 011627 */
+  /* 272838 */
+  /* 1b2a41 */
+}
+
+/* tamaño iconos */
+.menu .icon {
+  font-size: 1.8rem;
+}
+.iconur {
+  font-size: 1.7rem;
+}
+
+/* color, transicion y hover iconos */
+.ig,
+.gh,
+.in,
+.tw,
+.ur {
+  color: #f3f3f3;
+  transition: all 300ms;
+}
+.ig:hover {
+  color: #d6249f;
+  transition: all 300ms;
+}
+.gh:hover {
+  color: #464444;
+  transition: all 300ms;
+}
+.in:hover {
+  color: #0e76a8;
+  transition: all 300ms;
+}
+.tw:hover {
+  color: #00acee;
+  transition: all 300ms;
+}
+.ur:hover {
+  color: var(--color-principal);
+  transition: all 300ms;
+}
+
+/* estilos para el btn login */
+.login-btn,
+.login-btn:hover,
+.login-btn:active,
+.login-btn:link {
+  border: none;
+  border-radius: none;
+  background: none;
+  outline: none;
+}
+
+/* estilos para titulo y x ventana modal login */
+.modal-header h5,
+  /*equis para cerrar*/
+  .modal-header .cerrar {
+  font-size: 2rem;
+}
+
+/* estolos para el formulario */
+.formulario label {
+  color: #fff;
+}
+.formulario input::placeholder {
+  color: rgba(255, 255, 255, 0.904);
+}
+.form-control {
+  outline: none;
+  border: 0.12rem solid var(--color-principal);
+  background-color: transparent;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: rgba(179, 179, 179, 0.164);
+  border-color: var(--color-principal);
+  outline: 0;
+  box-shadow: 0px 0px 12px -1px var(--color-principal);
+}
+
+/* estilos para el btn ingresar del modal */
+.btn-ingresar {
+  color: #fff;
+  font-weight: 400;
+  background: grey;
+}
+.btn-ingresar:hover {
+  color: #fff;
+  background-color: var(--color-principal);
+  box-shadow: 0px 0px 12px -1px var(--color-principal);
+}
+/***************************************************************************************************/
+/*********************************************FIN HEADER********************************************/
+/***************************************************************************************************/
