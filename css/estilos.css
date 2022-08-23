@@ -15,6 +15,39 @@ body {
   background-color: #1b1b1b;
 }
 
+/* VALORES EN COMUN REPETIDOS PARA LAS SECCIONES*/
+.content-aboutMe,
+.content-experiencia,
+.educacion,
+.hard-soft-skills,
+.proyectos {
+  margin-bottom: 5rem;
+}
+
+/* VALORES EN COMUN REPETIDOS PARA LAS CARDS*/
+.content-experiencia .card,
+.content-educacion .card,
+.content-educacion-complementaria .card {
+  border: 1.5px solid var(--color-principal);
+  --bs-card-bg: #8585854b;
+  color: #fff;
+  transition: all 300ms;
+}
+/* VALORES EN COMUN REPETIDOS PARA LAS CARDS:HOVER*/
+.content-experiencia .card:hover,
+.content-educacion .card:hover,
+.content-educacion-complementaria .card:hover {
+  box-shadow: 0px 0px 12px -1px var(--color-principal);
+  transition: all 300ms;
+  transform: scale(1.03);
+}
+
+/*estilos para las card-experiencia y cad-educacion-formal*/
+.content-experiencia .card,
+.content-educacion .card {
+  width: 20rem;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------HEADER---------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
@@ -120,3 +153,93 @@ body {
 /***************************************************************************************************/
 /*********************************************FIN HEADER********************************************/
 /***************************************************************************************************/
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAIN----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+.contenedorMain {
+  overflow: hidden;
+}
+
+/* estilos para la imagen perfil */
+.content-aboutMe .contenedor {
+  overflow: visible;
+}
+
+.content-aboutMe .acercaDe .contenedorFoto {
+  margin-top: -60px;
+}
+
+.contenedorFoto img {
+  width: 7.1875rem;
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.671);
+}
+
+/* estilos para el hero banner*/
+.hero {
+  background-image: url(../img/hero.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-attachment: fixed;
+}
+
+.hero .contenedorTexto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin: 11.875rem 0;
+}
+
+.hero .contenedorTexto .texto {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  border-radius: 0.1875rem;
+  padding: 1.25rem 3.75rem;
+}
+
+.hero .contenedorTexto .texto h1,
+.hero .contenedorTexto .texto h2 {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hero .contenedorTexto .texto .Nombre {
+  margin: 0.625rem;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+}
+
+.hero .contenedorTexto .texto .Profesion {
+  font-size: 1.5625rem;
+  line-height: 3.125rem;
+}
+
+/* estilos para el aboutme */
+.content-aboutMe .acercaDe .contenedorTexto {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.875rem;
+  text-align: center;
+  width: 80%;
+  margin: 2.5rem auto 0 auto;
+}
+
+.content-aboutMe .acercaDe .contenedorTexto .resaltar {
+  color: var(--color-principal);
+  text-decoration: underline;
+}
+
+.content-experiencia .card img {
+  height: 15rem;
+}
+
+.content-experiencia .card .desde-hasta .desde-hasta-p {
+  font-weight: bold;
+}
