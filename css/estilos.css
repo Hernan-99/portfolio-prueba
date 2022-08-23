@@ -243,3 +243,46 @@ body {
 .content-experiencia .card .desde-hasta .desde-hasta-p {
   font-weight: bold;
 }
+
+/* estilos para el colapsable de estudios formales */
+.content-educacion .card .colapsable .card-body {
+  width: 18rem;
+}
+
+.content-educacion .card .colapsable {
+  min-height: 120px;
+}
+.content-educacion .card .btn-colappse-horizontal {
+  border: 1px solid var(--color-principal);
+  background-color: rgba(0, 0, 0, 0.473);
+  transition: all 300ms;
+}
+.content-educacion .card .btn-colappse-horizontal:hover {
+  background-color: var(--color-principal);
+  box-shadow: 0px 0px 12px -1px var(--color-principal);
+  transition: all 300ms;
+}
+
+/*estilos para las card-educacion-complementaria*/
+.content-educacion-complementaria .card-cursos .descripcion-cursos a {
+  text-decoration: underline;
+}
+
+/* hard y soft skills */
+
+.content-hard-soft-skills .tec {
+  transform: rotate(0deg);
+  transition: all 300ms;
+}
+
+.content-hard-soft-skills .tec:hover {
+  transform: scale(1.5) rotate(20deg);
+  transition: all 300ms;
+}
+
+.w-95 {
+  width: 95%;
+}
+/***************************************************************************************************/
+/**********************************************FIN MAIN*********************************************/
+/***************************************************************************************************/
