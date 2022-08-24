@@ -7,7 +7,7 @@ const mostrarCV = window.addEventListener("scroll", () => {
   // console.log(valorScroll);
 
   // condicion para que aparezca el boton de descarga
-  valorScroll < 1150
+  valorScroll < 3800
     ? btn.classList.remove("ocultar")
     : btn.classList.add("ocultar");
 });
