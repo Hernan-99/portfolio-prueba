@@ -5,6 +5,7 @@
   --color-html: #e34c26;
   --color-js: #f0db4f;
   --color-principal: #ff4b28;
+  --color-secundario: #00acee;
 }
 html {
   box-sizing: border-box;
@@ -51,16 +52,20 @@ body {
 .content-experiencia .card,
 .content-educacion .card,
 .content-educacion-complementaria .card {
-  border: 1.5px solid var(--color-principal);
   --bs-card-bg: #8585854b;
   color: #fff;
   transition: all 300ms;
+  box-shadow: 25px 25px 20px -20px #000000;
 }
+
+.content-educacion .card-colapsable {
+  box-shadow: 12.5px 12.5px 10px -10px #000000;
+}
+
 /* VALORES EN COMUN REPETIDOS PARA LAS CARDS:HOVER*/
-.content-experiencia .card:hover,
-.content-educacion .card:hover,
 .content-educacion-complementaria .card:hover {
-  box-shadow: 0px 0px 12px -1px var(--color-principal);
+  border: 1.5px solid #00acee;
+  box-shadow: 0px 0px 12px -1px #00acee;
   transition: all 300ms;
   transform: scale(1.03);
 }
@@ -119,7 +124,7 @@ body {
   transition: all 300ms;
 }
 .ur:hover {
-  color: var(--color-principal);
+  color: var(--color-secundario);
   transition: all 300ms;
 }
 
@@ -150,16 +155,16 @@ body {
 }
 .form-control {
   outline: none;
-  border: 0.12rem solid var(--color-principal);
+  border: 0.12rem solid var(--color-secundario);
   background-color: transparent;
 }
 
 .form-control:focus {
   color: #212529;
   background-color: rgba(179, 179, 179, 0.164);
-  border-color: var(--color-principal);
+  border-color: var(--color-secundario);
   outline: 0;
-  box-shadow: 0px 0px 12px -1px var(--color-principal);
+  box-shadow: 0px 0px 12px -1px var(--color-secundario);
 }
 
 /* estilos para el btn ingresar del modal */
@@ -170,8 +175,8 @@ body {
 }
 .btn-ingresar:hover {
   color: #fff;
-  background-color: var(--color-principal);
-  box-shadow: 0px 0px 12px -1px var(--color-principal);
+  background-color: var(--color-secundario);
+  box-shadow: 0px 0px 12px -1px var(--color-secundario);
 }
 /***************************************************************************************************/
 /*********************************************FIN HEADER********************************************/
@@ -208,6 +213,8 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   background-attachment: fixed;
+  animation: mover-img 10s timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .hero .contenedorTexto {
@@ -276,14 +283,13 @@ body {
   min-height: 120px;
 }
 .content-educacion .card .btn-colappse-horizontal {
-  border: 1px solid var(--color-principal);
+  border: none;
   background-color: rgba(0, 0, 0, 0.473);
   transition: all 300ms;
 }
 .content-educacion .card .btn-colappse-horizontal:hover {
-  background-color: var(--color-principal);
-  box-shadow: 0px 0px 12px -1px var(--color-principal);
-  transition: all 300ms;
+  background-color: #00acee;
+  box-shadow: 0px 0px 5px #00acee, 0 0 20px #00acee, 0 0 40px #00acee;
 }
 
 /*estilos para las card-educacion-complementaria*/
@@ -380,6 +386,40 @@ hr {
 .progress .cratividad {
   background-color: #104547;
 }
+
+/* SECCION PROYECTOS */
+
+.content-proyectos .bg-amarillo {
+  background-color: #f4e8c1;
+}
+.content-proyectos .bg-opal {
+  background-color: #a0c1b9;
+}
+
+.content-proyectos .bg-naranja {
+  background-color: #33737a;
+}
+
+.content-proyectos .bg-celeste {
+  background-color: #0b3b49;
+}
+
+.content-proyectos .bg-azul {
+  background-color: #8aa79f;
+}
+
+.content-proyectos .bg-rojo {
+  background-color: #15616d;
+}
+
+.content-proyectos .bg-gris {
+  background-color: #001524;
+}
+
 /***************************************************************************************************/
 /**********************************************FIN MAIN*********************************************/
 /***************************************************************************************************/
+
+.vh-20 {
+  height: 20vh;
+}
