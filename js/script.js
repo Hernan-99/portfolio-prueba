@@ -4,7 +4,7 @@ const btn = document.getElementById("curriculum");
 // evento
 const mostrarCV = window.addEventListener("scroll", () => {
   const valorScroll = document.documentElement.scrollTop;
-  console.log(valorScroll);
+  // console.log(valorScroll);
 
   // condicion para que aparezca el boton de descarga
   valorScroll < 1150
